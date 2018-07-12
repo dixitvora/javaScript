@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <label for="GST"> <b> the  GST calculater </b></label>
+        <form action="#" id="GST">
+            <label for="first">git the prise per producet </label>
+            <input type="number" id="first"><br><br>
+            <label for="second"> give the no of products </label>
+            <input type="number" id="second"><br><br>
+            
+            <label for="dis">give the discount </label>
+            <select name="discount" id="dis">
+                <option value="">--select the discount percentage--</option>
+                <option value="2.5%">2.5%</option>
+                <option value="5%">5%</option>
+                <option value="7.5%">7.5%</option>
+            </select><br><br>
+            <label for="gstin">Give ur GST Slab</label>
+            <select name="gst" id="gstin" >
+                <option value="">--select your gst Slab--</option>
+                <option value="5%">5%</option>
+                <option value="10%">10%</option>
+                <option value="12%">12%</option>
+                <option value="15%">15%</option>
+                <option value="18%">18%</option>
+                <option value="22%">22%</option>
+                <option value="28%">28%</option>
+            </select><br><br>
+
+
+            
+
+        </form><br>
+        <button id="basic_pric">to get the basic price </button>
+        <button id="add" onmouseover="add()"> add</button>
+        <button id="sub" onmouseover="sub()">sub</button>
+        <button id="mul" onmouseover="mul()">multiply</button>
+        <button id="div" onmouseover="div()">divde</button>
+        <button id="rem" onmouseover="rem()">reminder</button>
+        <button type="reset" > clear the form</button>
+
+        <form action="#">
+            <h2>the amout of the product <label id="basic"></label></h2>
+           <h2> the answer to yours click  <label for="" id="output"></label></h2>
+        </form>
+    </center>
+
+
+
+
+
+
+    <script src="js/second.js"></script>
+</body>
+</html>
