@@ -136,3 +136,60 @@ function sub3() {
          document.write("<br />");
      }
      document.write("Exiting from the loop!");
+
+
+     var x = 0;
+     document.write('entering the loop <br/>');
+     while (x<25){
+         if (x == 5){
+             break;
+         }
+         x = x+1;
+         document.write( "this is the value of x " + x + '<br/>');
+
+     }
+document.write('exit from the loop <br/>');
+
+
+var v = 1 ;
+document.write('entering the loop <br/>');
+while (v <10) {
+    v = v+1 ;
+    if (v == 5){
+        continue;
+        document.write('the value is out of the loop ');
+
+    }
+    document.write(v + "<br/>");
+}
+document.write('exit from the loop <br/>');
+
+
+document.write ("entering the loop <br/>");
+outerloop: 
+for (i = 0 ; i <10 ; i++){
+    document.write('outerloop : ' + i + '<br/>');
+    innerloop :
+    for (j =0 ; j<10; j++ ){
+        if (j>3)break;
+        if (i==2) break innerloop;
+        if (i == 4 )break outerloop;
+        document.write('innerloop:' +j + '<br/>');
+    }
+}
+document.write("exit from the loop ");
+
+document.write('<br>' + ' entering the loop ');
+outerloop:
+for (i = 0; i < 3 ; i++){
+    document.write("outerloop:" + i + "<br>");
+    for(j = 0; j <5 ; j++){
+        if (j==3){
+            continue outerloop;
+
+        } 
+        document.write('innerloop:' + j +'<br>');
+    }
+}
+
+document.write('exit from the loop: <br>' );
