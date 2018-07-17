@@ -193,3 +193,25 @@ for (i = 0; i < 3 ; i++){
 }
 
 document.write('exit from the loop: <br>' );
+
+function conCat(first,last){
+    var full ;
+    full = first + last ;
+    return full ;
+
+}
+function secondFunction(){
+    var result;
+    result =  conCat('Dixter','code');
+    // document.write(result);
+    alert(result);
+}
+
+function over(){
+    // document.write('mouse over');
+    // alert('you have a mouse over')
+}
+function out(){
+    // document.write("mouse out");
+    // alert('you have a mouse out')
+}

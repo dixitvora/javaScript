@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var book = new Object();
+        book.subject = 'Perl';
+        book.author = 'dixter';
+
+        document.write('book name is ' + book.subject + '<br>');
+        document.write('books auther is ' + book.author + '<br>');
+
+    </script>
+
+    <script>
+        function book(title, author){
+            this.title = title; 
+            this.author  = author;
+         }
+         var myBook = new book("Perl", "Mohtashim");
+         document.write("Book title is : " + myBook.title + "<br>");
+         document.write("Book author is : " + myBook.author + "<br>");
+    </script>
+
+    <script>
+        function addPrice(amount){
+            this.price = amount;
+        }
+        function book(title,author){
+            this.title = title;
+            this.author = author;
+            this.addPrice = addPrice;
+
+        }
+        var myBook = new book('dixter','code');
+        myBook.addPrice(150);
+        document.write('book title is ' + myBook.title + '<br>');
+        document.write('book author is  ' + myBook.author + '<br>');
+        document.write('book price is   ' + myBook.price + "<br>");
+    </script>
+</body>
+</html>
